@@ -125,7 +125,7 @@ commands = {
   'comdiv' : comdiv,
   'comdiv_now': comdiv_now,
   'polish_now': polish_now,
-  'shutdown' : shutdown;
+  'shutdown' : shutdown
 }
 
 def command(entry, func, aliases):
