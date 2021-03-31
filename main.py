@@ -12,6 +12,7 @@ while True:
   cmd_stov = ['stov', 'stringtovector']
   cmd_cd = ['commondivisors', 'commondivisor', 'comdiv', 'cd']
   cmd_pol = ['polish', 'pol', 'po', 'p']
+  cmd_shut = ['shutdown', 'shut']
 
   helpp = True
   if command(what, 'sarcasm', cmd_sarcasm):
@@ -26,6 +27,8 @@ while True:
     helpp = False
   elif command(what, 'polish', cmd_pol):
     helpp = False
+  elif command(what, 'shutdown', cmd_shut):
+    helpp = False
   
   #show help funkction?
   if helpp or what == "help":
@@ -35,3 +38,4 @@ while True:
     print("[s]tring [to] [v]ector {string}")
     print("[c]mmon [d]ivisors")
     print("[p]polish")
+    print("[shut]down {time}")

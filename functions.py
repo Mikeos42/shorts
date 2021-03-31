@@ -1,3 +1,5 @@
+import os
+
 #stov
 def stov(s):
   ret = "{"
@@ -107,6 +109,9 @@ def polish_now():
   print(litery)
   print(litery.upper())
 
+def shutdown(i):
+  os.system("shutdown /s /t " + str(i * 60))
+
 #run them
 commands = {
   'lorem' : lorem,
@@ -119,7 +124,8 @@ commands = {
   'stov_now' : stov_now,
   'comdiv' : comdiv,
   'comdiv_now': comdiv_now,
-  'polish_now': polish_now
+  'polish_now': polish_now,
+  'shutdown' : shutdown;
 }
 
 def command(entry, func, aliases):
