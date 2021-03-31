@@ -110,6 +110,9 @@ def polish_now():
   print(litery.upper())
 
 def shutdown(i):
+  if(i == "stop"):
+    os.system("shutdown -a")
+    return "Shutdown stopped"
   shut_time = str(int(i) * 60)
   os.system("shutdown -s -t " + shut_time)
   return "Will shut down in " + i + " minutes"
